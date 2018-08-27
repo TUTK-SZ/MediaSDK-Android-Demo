@@ -11,6 +11,4 @@
 <br>3）device:login<br/>
 <br>4）client：connect -> startSendVideo -> startSendVideo -> startSendVideo -> startSendVideo<br/>
 <br>4 效果图：<br/>
-![device](https://github.com/TUTK-SZ/MediaSDK-Android-Demo/blob/master/demo_01.png)
 
-![client](https://github.com/TUTK-SZ/MediaSDK-Android-Demo/blob/master/demo_02.png)
