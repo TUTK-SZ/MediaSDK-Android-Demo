@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="rotation">
+        <enum name="rotation_0" value="0"/>
+        <enum name="rotation_90" value="1"/>
+        <enum name="rotation_180" value="2"/>
+        <enum name="rotation_270" value="3"/>
+    </attr>
+
+    <declare-styleable name="CameraEncodePreview">
+        <attr name="rotation"/>
+    </declare-styleable>
+
+    <declare-styleable name="CameraEncodePreview2">
+        <attr name="rotation"/>
+    </declare-styleable>
+
+
+</resources>

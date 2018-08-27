@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tutk.libTUTKMedia.CameraDecodePreview
+        android:id="@+id/decode_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.tutk.libTUTKMedia.CameraEncodePreview
+        android:id="@+id/encode_preview"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CDKA8H4CU7R4GGPGUHC1"/>
+
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="connect"
+        android:text="connect"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/edit_uid"/>
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="disconnect"
+        android:text="disconnect"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_connect"
+        app:layout_constraintTop_toBottomOf="@id/edit_uid"/>
+
+
+    <Button
+        android:id="@+id/btn_startSendVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startSendVideo"
+        android:text="startSendVideo"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_connect"/>
+
+    <Button
+        android:id="@+id/btn_stopSendVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stopSendVideo"
+        android:text="stopSendVideo"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_startSendVideo"
+        app:layout_constraintTop_toBottomOf="@id/btn_connect"/>
+
+    <Button
+        android:id="@+id/btn_startReceiveVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startReceiveVideo"
+        android:text="startReceiveVideo"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_startSendVideo"/>
+
+    <Button
+        android:id="@+id/btn_stopReceiveVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stopReceiveVideo"
+        android:text="stopReceiveVideo"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_startReceiveVideo"
+        app:layout_constraintTop_toBottomOf="@id/btn_startSendVideo"/>
+
+
+    <Button
+        android:id="@+id/btn_startSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startSpeak"
+        android:text="startSpeak"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_startReceiveVideo"/>
+
+    <Button
+        android:id="@+id/btn_stopSpeak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stopSpeak"
+        android:text="stopSpeak"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_startSpeak"
+        app:layout_constraintTop_toBottomOf="@id/btn_startReceiveVideo"/>
+
+    <Button
+        android:id="@+id/btn_startListener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startListener"
+        android:text="startListener"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_startSpeak"/>
+
+    <Button
+        android:id="@+id/btn_stopListener"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stopListener"
+        android:text="stopListener"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_startListener"
+        app:layout_constraintTop_toBottomOf="@id/btn_startSpeak"/>
+
+    <Button
+        android:id="@+id/btn_sendIOCtrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendIOCtrl"
+        android:text="sendIOCtrl"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_startListener"/>
+
+    <TextView
+        android:id="@+id/tv_rtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="rtt:"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_sendIOCtrl"/>
+
+
+</android.support.constraint.ConstraintLayout>

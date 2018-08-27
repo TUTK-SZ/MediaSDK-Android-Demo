@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.tutk.libTUTKMedia.CameraDecodePreview
+        android:id="@+id/decode_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <com.tutk.libTUTKMedia.CameraEncodePreview
+        android:id="@+id/encode_preview"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <EditText
+        android:id="@+id/edit_uid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="测试uid"
+        android:text="CDKA8H4CU7R4GGPGUHC1"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="login"
+        android:text="login"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/edit_uid"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="logout"
+        android:text="logout"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_login"
+        app:layout_constraintTop_toBottomOf="@id/edit_uid"/>
+
+    <Button
+        android:id="@+id/btn_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="disconnect"
+        android:text="disconnect"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_login"/>
+
+    <Button
+        android:id="@+id/btn_sendIOCtrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="sendIOCtrl"
+        android:text="sendIOCtrl"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_disconnect"/>
+
+    <Button
+        android:id="@+id/btn_snapshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="snapshot"
+        android:text="snapshot"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_sendIOCtrl"/>
+
+    <Button
+        android:id="@+id/btn_startRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startRecord"
+        android:text="startRecord"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_snapshot"/>
+
+    <Button
+        android:id="@+id/btn_stopRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="stopRecord"
+        android:text="stopRecord"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toRightOf="@id/btn_startRecord"
+        app:layout_constraintTop_toBottomOf="@id/btn_snapshot"/>
+
+    <TextView
+        android:id="@+id/tv_rtt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="rtt:"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_stopRecord"/>
+
+
+    <SeekBar
+        android:progress="25"
+        android:id="@+id/seek_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="50"
+        app:layout_constraintTop_toBottomOf="@id/tv_rtt"/>
+
+
+</android.support.constraint.ConstraintLayout>
