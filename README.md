@@ -14,5 +14,4 @@
 
 ![device](https://github.com/TUTK-SZ/MediaSDK-Android-Demo/blob/master/demo_03.png)
 
-
 ![client](https://github.com/TUTK-SZ/MediaSDK-Android-Demo/blob/master/demo_04.png)
