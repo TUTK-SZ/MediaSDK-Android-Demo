@@ -6,7 +6,7 @@
 <br>website：www.throughtek.cn<br/>
 <br>3 测试步骤：<br/>
 <br>1）准备两台手机安装demo<br/>
-<br>2）A手机作为client：link->作为clint<br/>
+<br>2）A手机作为client：link->作为client<br/>
 <br>3）B手机作为device：link->作为device<br/>
 <br>3）device:login<br/>
 <br>4）client：connect -> startSendVideo -> startSendVideo -> startSendVideo -> startSendVideo<br/>
